@@ -1,0 +1,131 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada para el body */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('changos3.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container {
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); /* Fondo blanco con difuminado */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Sombras difusas alrededor del contenedor */
+    max-width: 500px; /* Añadimos un ancho máximo para evitar que el contenedor sea demasiado ancho */
+    width: 100%; /* Se asegura que el contenedor tenga el 100% del ancho disponible */
+    margin-bottom: 20px; /* Margen entre el botón y el título */
+}
+
+/* Estilos del botón */
+.welcome-button {
+    background-color: #4CAF50; /* Color verde */
+    color: white; /* Texto blanco */
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px; /* Esto mueve el botón más abajo */
+    display: block; /* Hace que el botón sea un bloque para que ocupe toda la anchura disponible */
+    margin-left: auto;
+    margin-right: auto; /* Esto centra el botón horizontalmente */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto cuando el botón es hover */
+.welcome-button:hover {
+    background-color: #45a049; /* Color más oscuro cuando se pasa el cursor */
+}
+
+/* Estilos del texto "Hola mi changa" */
+h1 {
+    font-family: "Montserrat", sans-serif; /* Aplica la fuente Montserrat */
+    color: #4CAF50; /* Color verde para las letras */
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: -0.15em; /* Disminuye aún más el espacio entre las letras */
+    border: 2px solid #4CAF50; /* Borde verde alrededor del texto */
+    padding: 10px; /* Ajuste el espacio alrededor del texto dentro del borde */
+    border-radius: 5px; /* Esquinas del borde redondeadas */
+}
+
+h1 span {
+    display: inline-block;
+    opacity: 0;
+    color: #4CAF50; /* Color verde */
+    animation: lightEffect 2s ease-in-out forwards;
+}
+
+/* Animación para cada letra */
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+h1 span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+h1 span:nth-child(11) {
+    animation-delay: 1s;
+}
+h1 span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+/* Animación de iluminación con retorno al estado normal */
+@keyframes lightEffect {
+    0% {
+        opacity: 0;
+        text-shadow: 0 0 0 #4CAF50, 0 0 0 #4CAF50, 0 0 0 #4CAF50;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 6px #4CAF50, 0 0 6px #4CAF50, 0 0 6px #4CAF50;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 0 #4CAF50, 0 0 0 #4CAF50, 0 0 0 #4CAF50; /* Regresa a la normalidad */
+    }
+}
+
+
+
+
+
+
+
+
+
+

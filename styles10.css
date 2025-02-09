@@ -1,0 +1,63 @@
+/* Estilos para el body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('nube rosa.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos al inicio de la pantalla */
+    text-align: center; /* Centra el texto */
+}
+
+/* Contenedor principal */
+.page2-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre el título, el GIF y el botón */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin-top: 40px; /* Agrega espacio superior */
+}
+
+/* Estilos del título */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos del GIF */
+.gif-image {
+    width: 300px; /* Ajusta el tamaño del GIF */
+    height: auto; /* Mantiene la proporción del GIF */
+    margin-bottom: 20px; /* Espacio debajo del GIF */
+}
+
+/* Contenedor del botón como imagen */
+.image-button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+/* Botón como imagen */
+.image-button {
+    width: 66px; /* Un tercio del tamaño original (200px -> 66px) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor a un dedo al pasar por encima */
+    transition: transform 0.3s ease; /* Efecto al pasar el ratón */
+}
+
+.image-button:hover {
+    transform: scale(1.1); /* Hace zoom cuando pasas el ratón */
+}
+
+
+
+
+
+

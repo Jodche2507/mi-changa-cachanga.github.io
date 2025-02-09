@@ -1,0 +1,82 @@
+/* Fondo y estilo de letra */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('nube rosa.jpg') no-repeat center center fixed; /* Fondo igual que en la página 2 */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos al principio de la página */
+}
+
+/* Contenedor principal */
+.page3-container {
+    text-align: center;
+    margin-top: 40px; /* Ajuste para mover el contenido hacia arriba */
+}
+
+/* Estilos del título */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: none;
+}
+
+/* Estilos del GIF */
+.gif-image {
+    margin-top: 20px; /* Espacio superior para separar el GIF del título */
+    width: 300px; /* Ajusta el tamaño del GIF */
+    height: auto; /* Mantiene la proporción original del GIF */
+}
+
+/* Contenedor de botones */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 30px; /* Espacio entre los botones y el GIF */
+}
+
+/* Botones */
+.button-yes, .button-no {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white; /* Texto blanco */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para los botones */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botón "Sí" (verde bebé) */
+.button-yes {
+    background-color: #90EE90; /* Verde bebé */
+}
+
+.button-yes:hover {
+    background-color: #76d076; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Botón "No" (rojo bebé) */
+.button-no {
+    display: inline-block;
+    background-color: #FFB6C1; /* Rojo bebé */
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.button-no:hover {
+    background-color: #ff808c; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
